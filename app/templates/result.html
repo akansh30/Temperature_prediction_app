@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>Predicted Uncertainty: {{ prediction }}</p>
+    <h2>Explanation</h2>
+    <p>{{ explanation }}</p>
+    <a href="{{ url_for('main.index') }}">Back</a>
+</body>
+</html>
